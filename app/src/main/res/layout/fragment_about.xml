@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.about.AboutFragment">
+    android:background="?android:attr/windowBackground"
+    android:padding="@dimen/padding_screen">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_profile"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size"
+            android:contentDescription="@string/profile_picture"
+            android:elevation="@dimen/image_elevation"
+            android:src="@drawable/profile"
+            app:shapeAppearanceOverlay="@style/CircleImage" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_medium"
+            android:text="@string/guilherme_severo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_small"
+            android:text="@string/profile_description"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_body" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_app_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_large"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:id="@+id/text_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_subtitle"
+                    android:textStyle="bold"
+                    tools:text="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/text_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/medium_grey"
+                    android:textSize="@dimen/text_size_body"
+                    tools:text="Versão 1.0.0" />
+
+                <TextView
+                    android:id="@+id/text_app_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_small"
+                    android:text="@string/description_app"
+                    android:textColor="@color/medium_grey"
+                    android:textSize="@dimen/text_size_body" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/text_links_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_large"
+            android:text="@string/find_by_me"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_subtitle"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_links"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_small"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_github"
+                android:layout_width="@dimen/link_button_size"
+                android:layout_height="@dimen/link_button_size"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/github"
+                android:src="@drawable/ic_github" />
+
+            <ImageButton
+                android:id="@+id/button_linkedin"
+                android:layout_width="@dimen/link_button_size"
+                android:layout_height="@dimen/link_button_size"
+                android:layout_marginStart="@dimen/margin_start_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/linkedin"
+                android:src="@drawable/ic_linkedin" />
+
+            <ImageButton
+                android:id="@+id/button_email"
+                android:layout_width="@dimen/link_button_size"
+                android:layout_height="@dimen/link_button_size"
+                android:layout_marginStart="@dimen/margin_start_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/email"
+                android:src="@drawable/ic_email" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

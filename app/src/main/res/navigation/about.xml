@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.severo.themoviedatabase.presentation.about.AboutFragment"
+        android:name="com.severo.marvel.presentation.about.AboutFragment"
         android:label="@string/about_screen_title"
         tools:layout="@layout/fragment_about" />
 </navigation>

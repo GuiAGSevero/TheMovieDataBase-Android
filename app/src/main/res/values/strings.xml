@@ -1,18 +1,53 @@
 <resources>
-    <string name="app_name">TheMovieDataBase</string>
+    <string name="app_name">Heroes</string>
+    <string name="common_no_internet_connection">No internet connection</string>
+    <string name="common_no_results_found">No results found</string>
+    <string name="common_try_again">Try again</string>
+    <string name="common_offline_try_again">You are offline. Check your internet connection and try again</string>
 
-    <string name="movies_screen_title">Filmes</string>
-    <string name="favorites_screen_title">Favorites</string>
-    <string name="about_screen_title">Sobre</string>
+    <string name="error_loading_data">Error when trying to load data</string>
+    <string name="error_loading_more_try_again">Error when trying to load the next page. Try again</string>
+    <string name="error_add_favorite">Error when trying to add favorite</string>
+    <string name="error_remove_favorite">Error when trying to remove favorite</string>
 
-    <!-- App Menu -->
-    <string name="app_menu_movies">Filmes</string>
+    <string name="app_menu_heroes">Heroes</string>
     <string name="app_menu_favorites">Favorites</string>
-    <string name="app_menu_about">Sobre</string>
+    <string name="app_menu_about">About</string>
 
-    <string name="menu_search">Procurar</string>
-    <string name="menu_sort">Organizar</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_sort">Sort</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="characters_screen_title">Characters</string>
+
+    <string name="details_comics_category">Comics</string>
+    <string name="details_events_category">Events</string>
+
+    <string name="favorites_screen_title">Favorites</string>
+    <string name="favorites_no_favorites_in_the_list">No heroes in the favorite list</string>
+
+    <string name="sort_order_by">Order by</string>
+    <string name="sort_order_by_name">Name</string>
+    <string name="sort_order_by_modified">Modified</string>
+    <string name="sort_order">Order</string>
+    <string name="sort_order_ascending">Ascending</string>
+    <string name="sort_order_descending">Descending</string>
+    <string name="sort_apply">Apply</string>
+
+    <string name="about_screen_title">About</string>
+    <string name="about_attribution">Data provided by Marvel. © 2021 Marvel</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="guilherme_severo">Guilherme Severo</string>
+    <string name="profile_description">Android developer passionate about technology, UI/UX and fan of the Marvel universe! 🚀🦸‍♂️</string>
+    <string name="description_app">This application was created for study and entertainment purposes, using Marvel\'s public API.</string>
+    <string name="find_by_me">Find me around:</string>
+    <string name="github">GitHub</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="email">Email</string>
+
+    <string name="version">Version %1$s</string>
+    <string name="send_email">Send Email</string>
+
+    <string name="gmail">guiagsevero@gmail.com</string>
+    <string name="github_url">https://github.com/GuiAGSevero</string>
+    <string name="linkedin_url">https://www.linkedin.com/in/guilherme-severo-45996a17b/</string>
 </resources>
